@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, #3498db, #2ecc71);
+}
+
+.container-homepage {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-height: 100%;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #95c9d8;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-homepage {
+    background-color: rgba(39, 39, 39, 0.849);
+    color: white;
+    padding: 3vh;
+    text-align: center;
+    font-size: 1.5vh;
+    border-radius: 3vh;
+    box-shadow: 0 2vh 2vh rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 0.1vh;
+    text-shadow: 0.5vh 0.5vh 1vh rgba(0, 0, 0, 0.2);
+    width: 83vh;
+}
+
+.presentation-homepage {
+    color: white;
+    padding: 3vh;
+    text-align: center;
+    font-size: 2vh;
+    border-radius: 3vh;
+    text-transform: uppercase;
+    letter-spacing: 0.1vh;
+    text-shadow: 0.5vh 0.5vh 1vh rgba(0, 0, 0, 0.2);
+    width: 83vh;
+}
+
+.content-homepage {
+    background-color: rgba(152, 152, 152, 0.372);
+    padding: 3vh;
+    align-content: center;
+    font-size: 2vh;
+    border-radius: 3vh;
+    text-transform: uppercase;
+    letter-spacing: 0.1vh;
+    text-shadow: 0.5vh 0.5vh 1vh rgba(0, 0, 0, 0.2);
+    width: 83vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+}
+
+.features-homepage {
+    color: white;
+    padding: 3vh;
+    text-align: center;
+    font-size: 2vh;
+    border-radius: 3vh;
+    text-transform: uppercase;
+    letter-spacing: 0.1vh;
+    text-shadow: 0.5vh 0.5vh 1vh rgba(0, 0, 0, 0.2);
+    width: 83vh;
+}
+
+.start-button-homepage {
+    background-color: rgb(219, 219, 219);
+    border: none;
+    color: #1e5799;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vh;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1.5vh;
+    transition: all 0.3s ease;
+    box-shadow: 0 0.6vh 1.2vh rgba(0, 0, 0, 0.1);
+    text-shadow: 0.2vh 0.2vh 0.4vh rgba(0, 0, 0, 0.2);
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2vh;
+    margin: 1vh auto;
+    padding: 2vh;
+}
+
+.start-button-homepage:hover {
+    background-color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Tcc Projeto</title>
+    <style>
+      #header {
+        background-color: #7d7d7d97;
+        color: #fff;
+        padding: 1vh;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      #header #logo {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-right: 1em;
+      }
+
+      #header #botao-home {
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding: 1vh;
+        background-color: transparent;
+        transition: background-color 0.2s ease-in-out;
+        border-radius: 50%; /* Rounded corners */
+      }
+
+      #header #botao-home:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+
+      #header #botao-home img {
+        width: 40px;
+        height: 40px;
+      }
+
+      #header #botao-login {
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding: 1vh;
+        background-color: transparent;
+        transition: background-color 0.2s ease-in-out;
+        border-radius: 15px;
+      }
+
+      #header #botao-login:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+
+      #header #botao-login img {
+        width: 40px;
+        height: 40px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <a href="/" id="botao-home">
+        <img src="src/assets/home.svg" alt="Home Icon" />
+      </a>
+      <a href="/login" id="botao-login">
+        <img src="src/assets/person.png" alt="Login Icon" />
+      </a>
+    </header>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

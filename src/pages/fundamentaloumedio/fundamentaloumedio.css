@@ -1,0 +1,72 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.button-containerE {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 2.5vh;
+    gap: 6vh;
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+.buttonE {
+    background-color: rgb(219, 219, 219);
+    border: none;
+    color: #1e5799;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1.5vh;
+    transition: all 0.3s ease;
+    box-shadow: 0 0.6vh 1.2vh rgba(0, 0, 0, 0.1);
+    text-shadow: 0.2vh 0.2vh 0.4vh rgba(0, 0, 0, 0.2);
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2vh;
+    margin: 0 auto;
+    padding: 7vh;
+    width: 45vh;
+}
+
+.buttonE:hover {
+    background-color: #ffffff;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.buttonE:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+@media (max-width: 600px) {
+    .button-containerE {
+        grid-template-columns: 1fr;
+        gap: 2vh;
+    }
+
+    .buttonE {
+        font-size: 4vh;
+        min-height: 22vh;
+        max-height: 30vh;
+        max-width: 55vh;
+        padding: 5vh;
+        width: 85%;
+    }
+}
