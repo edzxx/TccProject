@@ -1,21 +1,27 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 
-function recebimento() {
-  const [valor, setValor] = useState("");
+function Recebimento() {
+  const [numero, setNumero] = useState(0);
+
   useEffect(() => {
-    // Chama a API para pegar o valor do banco de dados
-    const getValor = async () => {
-      const response = await fetch("https://meu-banco-de-dados.com/valor");
-      const data = await response.json();
-      setValor(data.valor);
+    // Simulando uma requisição ao banco de dados
+    const dados = {
+      numero: 123, // Substitua com a sua lógica de requisição ao banco de dados
     };
-    getValor();
+    setNumero(dados.numero);
   }, []);
+
   return (
-    <div>
-      <p>Valor recebido: {valor}</p>
+    <div className="container">
+      <div className="header">Quantidade total de alunos:</div>
+      <div className="content">
+        <div id="quantidadetotal">{numero}</div>
+      </div>
+      <div className="footer">
+        <button id="buttonRecebimento" onClick={() => { window.location.href = "/TabelaDasSalas"; }}>Detalhes</button>
+      </div>
     </div>
   );
 }
 
-export default recebimento;
+export default Recebimento;
