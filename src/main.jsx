@@ -13,6 +13,7 @@ import Seteano from './pages/fundamental/seteano';
 import Oitoano from './pages/fundamental/oitoano';
 import Noveano from './pages/fundamental/noveano';
 import Recebimento from './pages/recebimento';
+import TabelaDasSalas from './pages/TabelaDasSalas';
 
 console.log('Aplicação renderizada!');
 
@@ -32,6 +33,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="/oitoano" element={<Oitoano />} />
           <Route path="/noveano" element={<Noveano />} />
           <Route path="/recebimento" element={<Recebimento />} />
+          <Route path="/TabelaDasSalas" element={<TabelaDasSalas />} />
         </Routes>
       </BrowserRouter>
   </StrictMode>,
